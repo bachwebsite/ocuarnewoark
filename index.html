@@ -9,9 +9,8 @@
     }
     * { background-color: #111111; }
     .brand {
-      letter-spacing: 5px;
-      font-weight: 50;
-      font-family: 'Bodoni', sans-serif;
+      font-weight: 400;
+      font-family: "Quicksand", sans-serif;
       font-size: 100px;
       text-align: center; 
     }
@@ -25,6 +24,12 @@
       text-align: center;
       font-family: 'Bodoni', sans-serif;
       color:white;
+    }
+    .quicksand-qs {
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
     }
     .userbtn {
       position: relative; 
@@ -68,6 +73,9 @@
   color: white;
 }
   </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jacquarda+Bastarda+9&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -75,13 +83,13 @@
     <h1 class="brand"><span class="ocular">Ocular</span><span class="network">Network </span><span class="ocular">AGENT PUBLIC DATABASE</span></h1>
   </header>
   <div class="line"></div>
-  <h1 class="brand" style="font-size: 50px; color: white; margin-left: 100px; margin-right: 100px;">Ocular<span class="network">Network</span>'s users gives students freedom on their browser journey by clearing the path against all* restricters</h1>
+  <h1 class="brand" style="font-size: 50px; color: white; margin-left: 100px; margin-right: 100px;">Ocular<span class="network">Network</span>'s users gives students freedom on their browser journey by clearing the path against most restrictors.</h1>
   <div class="line"></div>
   <main>
-    <a href="//breakium.com"><button class="userbtn" id="bach">bach</button></a>
-    <a href="//shuttle.rip/p41n"><button class="userbtn" id="some1">some1</button></a>
-    <a href="//ryanwilson.space/"><button class="userbtn" id="ev">EV</button></a>
-    <a href="//plexilearcade.glitch.me/"><button class="userbtn" id="clipped">Clipped</button></a>
+    <button class="userbtn" id="bach"><a href="//breakium.com">bach</a></button>
+    <button class="userbtn" id="some1"><a href="//shuttle.rip/p41n">some1</a></button>
+    <button class="userbtn" id="ev"><a href="//ryanwilson.space/">EV</a></button>
+    <button class="userbtn" id="clipped"><a href="//plexilearcade.glitch.me/">Clipped</a></button>
     <script>
       document.querySelector('#bach').setAttribute('data-tooltip','Created Breakium, contributed to ProxyComponents,');
       document.querySelector('#some1').setAttribute('data-tooltip','JMW, SpaceFlix, A1RPLAY, TSUMFG, Celeste, Astro, owns galactic network');
