@@ -24,11 +24,13 @@
       font-family: 'Bodoni', sans-serif;
       color:white;
     }
-    #userbtn {
+    .userbtn {
+      position: relative; 
       margin-left: 10px;
       margin-right: 10px;
       font-family: 'Source Code Pro', monospace;
       height: 60px;
+      width: 200px;
       background-color: #1E90FF;
       border-radius: 10px;
       font-size: 30px;
@@ -41,6 +43,23 @@
       margin-bottom: 50px;
     }
     a { text-decoration: none; color: inherit; background-color: inherit;}
+
+    .userbtn:hover:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%; 
+  transform: translateX(-50%);
+  background: #555;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+#clipped {
+  background-color:  #b03232;
+  box-shadow: 0 2px 25px #b03232;
+}
   </style>
 </head>
 <body>
@@ -49,8 +68,18 @@
     <h1 class="brand"><span class="ocular">Ocular</span><span class="network">Network </span><span class="ocular">USERS DATABASE</span></h1>
   </header>
   <div class="line"></div>
+  <h1 class="brand" style="font-size: 50px; color: white; margin-left: 100px; margin-right: 100px;">Ocular<span class="network">Network</span>'s users gives students freedom on their browser journey by clearing the path against all* restricters</h1>
+  <div class="line"></div>
   <main>
-    <button id="userbtn"><a href="//breakium.com">bach</a></button>
-    <button id="userbtn"><a href="//shuttle.rip/p41n">some1</a></button>
+    <button class="userbtn" id="bach"><a href="//breakium.com">bach</a></button>
+    <button class="userbtn" id="some1"><a href="//shuttle.rip/p41n">some1</a></button>
+    <button class="userbtn" id="ev"><a href="//ryanwilson.space/">EV</a></button>
+    <button class="userbtn" id="clipped"><a href="//plexilearcade.glitch.me/">Clipped</a></button>
+    <script>
+      document.querySelector('#bach').setAttribute('data-tooltip','Created Breakium and codes for proxy sites');
+      document.querySelector('#some1').setAttribute('data-tooltip','CEO @ Galactic Network & JMW');
+      document.querySelector('#ev').setAttribute('data-tooltip','made Aero, Filter Lock, Dispenser discord bot, Browser Ports, Auto-decomp');
+      document.querySelector('#clipped').setAttribute('data-tooltip','[nothing yet]');
+      </script>
 </body>
 </html>
